@@ -4,8 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <style>
+        body{
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+        #Wrapper {
+            font-family: Arial, sans-serif;
+            grid-column: 2/3;
+            display: grid;
+        }
+        #Title {
+            background-color: #b71234;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            border: 5px solid #0046AD;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        nav {
+            background-color: #ff5800;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            border: 5px solid #0046AD;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #BeforeStart{
+            background: #ff5800;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            border: 5px solid #0046AD;
+        }
+        main{
+            display: grid;
+        }
+    </style>
 </head>
 <body>
-    Caleb Moir's home page
+    <div id="Wrapper">
+        <header id="Title">
+            Rubik's Cube 101
+        </header>
+
+        <nav>
+            <a href="Home">Home</a>
+            <a href="Notation">Notation</a>
+            <a href="Solving the Top">Solving the Top</a>
+        </nav>
+
+        <main>
+            <header id="BeforeStart">Before you start</header>
+        </main>
+    </div>
 </body>
 </html>
