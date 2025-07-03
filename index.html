@@ -8,6 +8,7 @@
         body{
             display: grid;
             grid-template-columns: 1fr 3fr 1fr;
+            margin: 0;
         }
         #Wrapper {
             font-family: Arial, sans-serif;
@@ -30,7 +31,8 @@
             grid-template-columns: 1fr 1fr 1fr;
             text-align: center;
             padding: 10px 0;
-            border: 5px solid #0046AD;
+            border-left: 5px solid #0046AD;
+            border-right: 5px solid #0046AD;
         }
         nav a {
             color: white;
@@ -41,37 +43,42 @@
         nav a:hover {
             text-decoration: underline;
         }
-        #BeforeStart {
+        .header {
             background: #ff5800;
             color: white;
             padding: 20px;
             text-align: center;
             font-size: 2em;
-            border: 5px solid #0046AD;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-left: 5px solid #0046AD;
+            border-right: 5px solid #0046AD;
+            border-top: 5px solid #0046AD;
         }
         main {
             display: grid;
         }
         .section {
-            background-color: #ff5800;
+            background-color: #b71234;
             color: white;
             padding: 20px;
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1.2em;
             border-left: 5px solid #0046AD;
             border-right: 5px solid #0046AD;
             border-bottom: 5px solid #0046AD;
+            display: grid;
+            gap: 10px;
         }
-        .section:first-of-type {
-            border-top: none;
+        .section img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px auto;
         }
     </style>
 </head>
 <body>
     <div id="Wrapper">
         <header id="Title">
+            <img id="Rubiks-Logo" src="images/images/Rubiks-Logo.png" alt="Rubiks-Logo">
             Rubik's Cube 101
         </header>
 
@@ -82,21 +89,42 @@
         </nav>
 
         <main>
-            <header id="BeforeStart">Before you start</header>
+            <header class="header" id="BeforeStart">Before you start</header>
 
             <section class="section">
-                Before we start, you need to understand basic cubing notation and get your cube to this point.
-                <img 
+                <p>Before we start, you need to understand basic cubing notation and get your cube to this point.</p>
+                <img id="top-completed" src="images/images/top-completed.png" alt="top-completed">
+                <p>It is not required to use any formulas to get to this point, so you can do this yourself. If you struggle or want help with it, here's instructions, as well as instructions on cubing notation.</p>
+                <h1>Cubing notation</h1>
+                <h1>Solving the top</h1>
             </section>
+
+            <header class="header" id="MiddleSolve">Solving the Middle!</header>
 
             <section class="section">
-
+                <p>Next up is the middle section, this is our goal.</p>
+                <img id="middle-goal" src="images/images/middle-goal.png" alt="middle-goal">
+                <p>This is where we start being required to use algorithms but luckely there are only 2 and they are very similar.</p>
+                <img id="rc-middle" src="images/images/rc-middle.png" alt="rc-middle">
+                <p>Note that if the section is in the right spot but reversed, you need to do one of the above to remove it and then get it in the correct spot.</p>
+                <img id="rc-middle-wrong" src="images/images/rc-middle-wrong.png" alt="rc-middle-wrong">
             </section>
+
+            <header class="header" id="BottomSolve">Solving the Bottom!</header>
 
             <section class="section">
+                <p>Last but not least we need to do the bottom section</p>
+                <img id="bottom-goal" src="images/images/bottom-goal.png" alt="bottom-goal">
+                <p>Starting with the cross you need to follow this pattern. If you have just the center, do the formula 3 times. If you have the L shape, make it face back and run it twice. With the line, just run it once. No need to worry about the side colors, we'll do that next.</p>
+                <img id="rc-bottom-cross" src="images/images/rc-bottom-cross.png" alt="rc-bottom-cross">
+                <p>Now we'll get the sides to the correct colors. Running this formula will swap the 2 sections on the left or right</p>
+                <img id="rc-bottom-1" src="images/images/rc-bottom-1.png" alt="rc-bottom-1">
+                <p>Once that is done, we need to get the corners into the right spots. Not the right orientation, just the right spots. Using this formula will rotate the 3 corners not in the top right</p>
+                <img id="rc-bottom-corners" src="images/images/rc-bottom-corners.png" alt="rc-bottom-corners">
+                <img id="rc-bottom-2" src="images/images/rc-bottom-2.png" alt="rc-bottom-2">
+                <p>The last step is to rotate the corners into the correct orientation. Do this formula either 2 or 4 times until the current corner youre working on is correct. Repeat for all four corners and your done!</p>
 
             </section>
-
         </main>
     </div>
 </body>
