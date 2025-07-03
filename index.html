@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <style>
+    <style>
         body{
             display: grid;
             grid-template-columns: 1fr 3fr 1fr;
@@ -26,13 +26,11 @@
         }
         nav {
             background-color: #ff5800;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-            border: 5px solid #0046AD;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             text-align: center;
+            padding: 10px 0;
+            border: 5px solid #0046AD;
         }
         nav a {
             color: white;
@@ -43,16 +41,31 @@
         nav a:hover {
             text-decoration: underline;
         }
-        #BeforeStart{
+        #BeforeStart {
             background: #ff5800;
             color: white;
             padding: 20px;
             text-align: center;
             font-size: 2em;
             border: 5px solid #0046AD;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
-        main{
+        main {
             display: grid;
+        }
+        .section {
+            background-color: #ff5800;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            border-left: 5px solid #0046AD;
+            border-right: 5px solid #0046AD;
+            border-bottom: 5px solid #0046AD;
+        }
+        .section:first-of-type {
+            border-top: none;
         }
     </style>
 </head>
@@ -70,6 +83,20 @@
 
         <main>
             <header id="BeforeStart">Before you start</header>
+
+            <section class="section">
+                Before we start, you need to understand basic cubing notation and get your cube to this point.
+                <img 
+            </section>
+
+            <section class="section">
+
+            </section>
+
+            <section class="section">
+
+            </section>
+
         </main>
     </div>
 </body>
