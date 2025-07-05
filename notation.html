@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notation</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            margin: 0;
+        }
+        #Wrapper {
+            font-family: Arial, sans-serif;
+            grid-column: 2/3;
+            display: grid;
+        }
+        #Title {
+            background-color: #b71234;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 4em;
+            border: 5px solid #0046AD;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        nav {
+            background-color: #ff5800;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            text-align: center;
+            padding: 10px 0;
+            border-left: 5px solid #0046AD;
+            border-right: 5px solid #0046AD;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            background: #ff5800;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            border-left: 5px solid #0046AD;
+            border-right: 5px solid #0046AD;
+            border-top: 5px solid #0046AD;
+        }
+        main {
+            display: grid;
+        }
+        .section {
+            background-color: #b71234;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            border-left: 5px solid #0046AD;
+            border-right: 5px solid #0046AD;
+            border-bottom: 5px solid #0046AD;
+            display: grid;
+            gap: 10px;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px auto;
+        }
+        #Rubiks-Logo{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="Wrapper">
+        <header id="Title">
+            <img id="Rubiks-Logo" src="images/images/Rubiks-Logo.png" alt="Rubiks-Logo">
+            Cubing Notation
+        </header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="notation.html">Notation</a>
+            <a href="Solving the Top">Solving the Top</a>
+        </nav>
+
+        <main>
+            <header class="header" id="BeforeStart">Cubing Notation</header>
+
+            <section class="section">
+                <p>Before starting the Rubik's cube, it is important to understand cubing notation.</p>
+                <p>This graphic shows the different movements you will make on the cube from the front</p>
+                <img src="">
+
+                <p>For example, if the formula were "F R U", this would be the sequence you would use, with red being the front.</p>
+                <img src="">
+
+                <p>Also, in the images on this page, orange on the cube below would be considered the front, so "F" would twist a row of yellow down into the blue section.</p>
+                <img src="">
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>
